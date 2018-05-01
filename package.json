@@ -1,0 +1,20 @@
+{
+  "name": "atom-yaod-syntax",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "description": "Yet another syntax theme based on One Dark",
+  "author": "Taylon Silva",
+  "keywords": [
+    "syntax",
+    "theme",
+    "darktheme",
+    "dark theme",
+    "onedark",
+    "one dark"
+  ],
+  "repository": "https://github.com/taylon/atom-yaod-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

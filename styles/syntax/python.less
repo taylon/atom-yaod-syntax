@@ -1,0 +1,24 @@
+.syntax--python {
+    .syntax--variable {
+      color: @mono-1;
+
+        &.syntax--property {
+          color: @red;
+        }
+
+        &.syntax--self {
+            color: @yellow;
+            font-style: italic;
+        }
+    }
+
+    .syntax--keyword.syntax--operator.syntax--logical.syntax--python {
+      color: @purple;
+    }
+
+    .syntax--variable {
+        &.syntax--parameter {
+            color: @orange;
+        }
+    }
+}

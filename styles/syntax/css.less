@@ -1,0 +1,45 @@
+.syntax--css {
+  .syntax--property-name {
+    color: @mono-1;
+  }
+
+  .syntax--support {
+    &.syntax--constant {
+      color: @purple;
+    }
+  }
+
+  .syntax--constant {
+    &.syntax--numeric {
+      color: @yellow;
+    }
+
+    &.syntax--color {
+      color: @yellow;
+    }
+  }
+
+  .syntax--keyword {
+    &.syntax--operator {
+      font-style: italic;
+      color: @purple;
+    }
+  }
+
+  &.syntax--other {
+    &.syntax--inherited-class {
+      color: @green;
+    }
+
+    &.syntax--attribute-name {
+      &.syntax--pseudo-element {
+        color: @purple;
+        font-style: italic;
+      }
+
+      &.syntax--attribute {
+        color: @purple;
+      }
+    }
+  }
+}

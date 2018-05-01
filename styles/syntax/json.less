@@ -1,0 +1,22 @@
+.syntax--json {
+  .syntax--dictionary {
+    & > .syntax--string.syntax--quoted {
+      & > .syntax--punctuation.syntax--string {
+        color: @red;
+      }
+
+      color: @red;
+    }
+  }
+
+  .syntax--dictionary, .syntax--array {
+    & > .syntax--value > .syntax--string.syntax--quoted,
+    & > .syntax--value > .syntax--string.syntax--quoted > .syntax--punctuation {
+      color: @green;
+    }
+
+    & > .syntax--constant.syntax--language {
+      color: @orange;
+    }
+  }
+}

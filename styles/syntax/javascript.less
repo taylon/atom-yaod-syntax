@@ -1,0 +1,84 @@
+.syntax--js {
+  &.syntax--delete,
+  &.syntax--in,
+  &.syntax--of,
+  &.syntax--instanceof,
+  &.syntax--new,
+  &.syntax--typeof,
+  &.syntax--void {
+    color: @purple;
+  }
+
+  &.syntax--string {
+    &.syntax--unquoted {
+      color: @red;
+    }
+  }
+
+  .syntax--this {
+    font-style: italic;
+  }
+
+    &.syntax--constant {
+        color: @mono-1;
+    }
+
+    &.syntax--support {
+        &.syntax--variable {
+            &.syntax--property {
+                color: @mono-1;
+            }
+
+            &.syntax--property.syntax--dom {
+                color: @blue;
+            }
+        }
+    }
+
+    &.syntax--entity {
+        &.syntax--name {
+            &.syntax--type {
+                color: @orange;
+            }
+        }
+    }
+
+    &.syntax--variable {
+        &.syntax--property {
+            color: @blue;
+        }
+
+        &.syntax--other.syntax--object {
+            color: @mono-1;
+        }
+
+        &.syntax--other.syntax--object.syntax--property {
+            color: @blue;
+        }
+    }
+
+    &.syntax--string.syntax--quoted.syntax--template {
+      .syntax--other.syntax--object.syntax--property {
+          color: @green;
+      }
+    }
+
+    &.syntax--constant {
+        &.syntax--numeric {
+            color: @orange;
+        }
+
+        &.syntax--boolean {
+            color: @orange;
+        }
+    }
+
+    &.syntax--punctuation.syntax--begin:not(.syntax--string),
+    &.syntax--punctuation.syntax--end:not(.syntax--string) {
+        color: @blue;
+    }
+
+    &.syntax--export .syntax--variable.syntax--default {
+        color: @purple;
+    }
+}
